@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin: 0;
+}
+
+.kontak-container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.kontak-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.kontak-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.kontak-container input,
+.kontak-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.kontak-container button {
+  width: 100%;
+  background-color: #111;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.kontak-container button:hover {
+  background-color: #333;
+}

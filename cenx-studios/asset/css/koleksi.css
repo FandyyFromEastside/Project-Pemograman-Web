@@ -1,0 +1,191 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background: #111;
+  color: #fdfcfa;
+  line-height: 1.5;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 25px 60px;
+  border-bottom: 1px solid #bfa76f;
+}
+
+.navbar .nav-left,
+.navbar .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #bfa76f;
+}
+
+.navbar .navbar-logo a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #bfa76f;
+  text-decoration: none;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 6px 10px;
+  border-radius: 25px;
+}
+
+.search-form input[type="text"] {
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 6px;
+  width: 150px;
+  outline: none;
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  color: #bfa76f;
+}
+
+/* KOLEKSI */
+.koleksi-container {
+  padding: 120px 60px 60px;
+  background-color: #1e1e1e;
+  min-height: 100vh;
+}
+
+.koleksi-container h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 50px;
+  color: #bfa76f;
+  text-align: center;
+}
+
+.kategori-section {
+  margin-bottom: 80px;
+}
+
+.kategori-section h2 {
+  font-size: 32px;
+  color: #fdfcfa;
+  margin-bottom: 30px;
+}
+
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.produk-card {
+  background: #2a2a2a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produk-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.produk-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.produk-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fdfcfa;
+}
+
+.produk-card .harga {
+  font-size: 16px;
+  font-weight: 500;
+  color: #bfa76f;
+  margin-bottom: 15px;
+}
+
+.btn-detail {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #bfa76f;
+  color: #1e1e1e;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.btn-detail:hover {
+  background: #fdfcfa;
+  color: #1e1e1e;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #111;
+  color: #cccccc;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .koleksi-container {
+    padding: 100px 30px 40px;
+  }
+}

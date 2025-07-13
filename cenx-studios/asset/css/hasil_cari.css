@@ -1,0 +1,68 @@
+/* asset/css/hasil_cari.css */
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.produk-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.produk-card:hover {
+  transform: scale(1.02);
+}
+
+.produk-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.produk-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1em;
+}
+
+.produk-card p {
+  font-weight: bold;
+  color: #222;
+}
+
+.btn-beli {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #111;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-beli:hover {
+  background-color: #333;
+}

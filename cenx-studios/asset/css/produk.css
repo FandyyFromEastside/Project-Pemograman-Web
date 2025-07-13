@@ -1,0 +1,201 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background: #111;
+  color: #fdfcfa;
+  line-height: 1.5;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 25px 60px;
+  border-bottom: 1px solid #bfa76f;
+}
+
+.navbar .nav-left,
+.navbar .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #bfa76f;
+}
+
+.navbar .navbar-logo a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #bfa76f;
+  text-decoration: none;
+}
+
+/* NAV RIGHT */
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 6px 10px;
+  border-radius: 25px;
+}
+
+.search-form input[type="text"] {
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 6px;
+  width: 150px;
+  outline: none;
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  color: #bfa76f;
+}
+
+/* PRODUK SECTION */
+.produk-section {
+  padding: 140px 60px 80px;
+  background: #111;
+}
+
+.produk-section h1 {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #bfa76f;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.produk-card {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.produk-card:hover {
+  transform: translateY(-5px);
+}
+
+.produk-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.produk-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fdfcfa;
+}
+
+.harga {
+  font-size: 16px;
+  color: #bfa76f;
+  margin-bottom: 15px;
+}
+
+.btn-detail {
+  display: inline-block;
+  background: #bfa76f;
+  color: #1e1e1e;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-detail:hover {
+  background: #fdfcfa;
+  color: #111;
+}
+/* SEARCH FORM */
+.search-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #444;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 2px 5px;
+  background-color: #2a2a2a;
+}
+
+.search-form input {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  width: 140px;
+  background: transparent;
+  color: #fdfcfa;
+}
+
+.search-form::placeholder {
+  color: #999;
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.search-form button i {
+  font-size: 14px;
+  color: #fdfcfa;
+}
+
+.search-form input:focus {
+  outline: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #111;
+  color: #ccc;
+  font-size: 14px;
+}

@@ -1,0 +1,130 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #fdfcfa;
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #bfa76f;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #bfa76f;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #bfa76f;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form textarea,
+form select {
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 15px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form select option {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+form button {
+  padding: 12px;
+  background-color: #bfa76f;
+  color: #1e1e1e;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #fdfcfa;
+  color: #1e1e1e;
+}
+
+/* MESSAGE */
+.success,
+.error {
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.success {
+  background-color: #1e4620;
+  color: #b1f2b5;
+  border: 1px solid #3fae49;
+}
+
+.error {
+  background-color: #461e1e;
+  color: #f2b1b1;
+  border: 1px solid #ae3f3f;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    margin: 30px 20px;
+    padding: 30px 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}

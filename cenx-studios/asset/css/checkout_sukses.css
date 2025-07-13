@@ -1,0 +1,73 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #fdfcfa;
+  font-family: "Helvetica Neue", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.sukses-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+}
+
+.sukses-container h1 {
+  font-size: 32px;
+  color: #bfa76f;
+  margin-bottom: 20px;
+}
+
+.sukses-container p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.tombol-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn,
+.btn-outline {
+  padding: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.btn {
+  background-color: #bfa76f;
+  color: #1e1e1e;
+}
+
+.btn:hover {
+  background-color: #fdfcfa;
+  color: #1e1e1e;
+}
+
+.btn-outline {
+  border: 2px solid #bfa76f;
+  color: #bfa76f;
+}
+
+.btn-outline:hover {
+  background-color: #bfa76f;
+  color: #1e1e1e;
+}

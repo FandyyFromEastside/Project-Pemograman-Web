@@ -1,0 +1,190 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #111;
+  color: #fdfcfa;
+  line-height: 1.5;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 25px 60px;
+  border-bottom: 1px solid #bfa76f;
+}
+
+.navbar .nav-left,
+.navbar .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #bfa76f;
+}
+
+.navbar .navbar-logo a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #bfa76f;
+  text-decoration: none;
+}
+
+/* NAV RIGHT */
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 6px 10px;
+  border-radius: 25px;
+}
+
+.search-form input[type="text"] {
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 6px;
+  width: 150px;
+  outline: none;
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  color: #bfa76f;
+}
+
+/* CONTAINER */
+.container {
+  padding: 60px;
+  background-color: #1e1e1e;
+}
+
+.container h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #bfa76f;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table thead {
+  background-color: #333;
+}
+
+table th,
+table td {
+  padding: 16px;
+  text-align: left;
+  color: #fdfcfa;
+  border-bottom: 1px solid #444;
+}
+
+table th {
+  color: #bfa76f;
+  font-weight: 600;
+}
+
+table td a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+table td a:hover {
+  text-decoration: underline;
+}
+
+/* PRODUK IMAGE */
+.produk-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* TOTAL + CHECKOUT */
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #2a2a2a;
+  border-radius: 8px;
+}
+
+.total h3 {
+  color: #bfa76f;
+  font-size: 20px;
+}
+
+.btn-checkout {
+  background: #bfa76f;
+  color: #1e1e1e;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn-checkout:hover {
+  background: #fdfcfa;
+  color: #1e1e1e;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+
+  table th,
+  table td {
+    padding: 12px;
+  }
+
+  .total {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .btn-checkout {
+    width: 100%;
+    text-align: center;
+  }
+}
